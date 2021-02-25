@@ -94,6 +94,7 @@ if __name__=="__main__":
             for file in files:
                 if file.endswith('FLAIR.nhdr'):
                     in_img = sitk.ReadImage(os.path.join(root, file))
+                    # Change the voxel resolution
                     spacing = in_img.GetSpacing()
                     size = in_img.GetSize()
                     new_spacing = [1,1,1]
