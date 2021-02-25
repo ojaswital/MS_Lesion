@@ -119,7 +119,7 @@ if __name__=="__main__":
     new_h, new_w, new_d = 64, 64, 64  # 80,100 288,384 96,72
     #voxel=64*64*64*0.0001
 
-    for root, dirs, files in os.walk("MICCAI_Dataset/"):
+    for root, dirs, files in os.walk("ISBI_Dataset/"):
         if dirs == []:
             img = np.array(nib.load(os.path.join(root, "FLAIR_preprocessed.nii.gz")).get_fdata())
             max_img = np.max(img)
