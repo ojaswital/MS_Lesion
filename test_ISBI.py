@@ -1,3 +1,4 @@
+# Test the ISBI dataset on the model
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -7,7 +8,6 @@ import os
 from optparse import OptionParser
 import numpy as np
 from torch import optim
-# Test the ISBI dataset on the model
 from PIL import Image
 from torch.autograd import Function, Variable
 import matplotlib.pyplot as plt
